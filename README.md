@@ -1,4 +1,4 @@
-#Credit Risk Analysis
+# Credit Risk Analysis
 
 ## Overview of the Credit Risk Analysis
 Loan prediction risk analysis is an inherently unbalanced classification problem because good loans outnumber bad loans.
@@ -16,7 +16,7 @@ In the file [credit_risk_ensemble.ipynb](credit_risk_ensemble.ipynb) machine lea
 ## Results
 -  Random Oversampling:
 	- Balanced Accuracy - .661
-	- Precision: HR - .01, LR - 1.00
+	- Precision: High Risk (HR) - .01, Low Risk (LR) - 1.00
 	- Recall: HR - .66, LR - .67
 
 -  SMOTE Oversampling:
@@ -46,7 +46,7 @@ In the file [credit_risk_ensemble.ipynb](credit_risk_ensemble.ipynb) machine lea
 
 ## Credit Risk Analysis Summary
 There are tradeoffs between using the different resampling models.
-For credit analysis it is critical to be able to be able to identify the small number of bad loans.
+For credit analysis it is critical to be able to identify the small number of bad loans.
 You do not want a model that has a high percentage of false positives.
 Based on the data the Easy Ensemble AdaBoost Classifier model is the best for preventing fraudulent loans.
 It has a high accuracy score and it has relatively good precision and recall scores.
